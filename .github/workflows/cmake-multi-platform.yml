@@ -54,7 +54,7 @@ jobs:
       run: |
         echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
 
-    - name: Build
+    - name: Setup vcpkg
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
       run: ./vcpkg/bootstrap-vcpkg.sh && ./vcpkg/vcpkg install
 
