@@ -42,6 +42,6 @@ jobs:
         uses: lukka/run-cmake@v10
         id: runcmake
         with:
-          cmakeListsTxtPath: '${{ github.workspace }}/CMakeLists.txt'
+          cmakeListsTxtPath: 'CMakeLists.txt'
           configurePreset: 'default'
           buildPreset: 'default'
