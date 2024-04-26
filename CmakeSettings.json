@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${workspaceFolder}/build/${name}",
+      "installRoot": "${workspaceFolder}/install/${name}",
+      "cmakeToolchain": "${vcpkgRoot}/scripts/buildsystems/vcpkg.cmake",
+      "variables": [
+        {
+          "name": "CMAKE_BUILD_TYPE",
+          "value": "Debug"
+        }
+      ]
+    }
+  ],
+  "version": 2
+}
